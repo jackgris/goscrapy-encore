@@ -1,8 +1,6 @@
 <img width="200px" src="https://encore.dev/assets/branding/logo/logo.svg" alt="Encore - The Backend Development Engine" />
 
-# URL Shortener
-
-This is an example Encore application for a URL Shortener. It has two API endpoints and a SQL database to store the URL IDs and retrieve the full URL given an ID.
+# GoScrapy-Encored
 
 ## Developing locally
 
@@ -31,14 +29,6 @@ To run the application locally, make sure you have [Docker](https://docker.com) 
 encore run
 ```
 
-## Using the API
-
-To see that your app is running, you can ping the API to shorten a url.
-
-```bash
-curl 'http://localhost:4000/url' -d '{"URL":"https://news.ycombinator.com"}'
-```
-
 ## Open the developer dashboard
 
 While `encore run` is running, open <http://localhost:9400/> to view Encore's local developer dashboard.
@@ -47,10 +37,6 @@ Here you can see the request you just made and a view a trace of the response.
 ## Deployment
 
 Deploy your application to a staging environment in Encore's free development cloud.
-
-```bash
-git push encore
-```
 
 Then head over to <https://app.encore.dev> to find out your production URL, and off you go into the clouds!
 
