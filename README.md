@@ -1,14 +1,20 @@
-<img width="200px" src="https://encore.dev/assets/branding/logo/logo.svg" alt="Encore - The Backend Development Engine" />
-
 # GoScrapy-Encored
 
-## Developing locally
+## Web Project for Automatic Price Updates
 
-When you have installed Encore, you can create a new Encore application and clone this example with this command.
+The main idea is to simplify the process of updating prices for small companies from a wholesaler's list. This task becomes particularly challenging in countries where inflation causes prices for every product to fluctuate frequently, sometimes changing two or even three times within a single month.
 
-```bash
-encore app create my-app-name --example=url-shortener
-```
+### To Address This Need, We Need to:
+
+- Retrieve product data from wholesalers' websites.
+- Save this data into a database.
+- Create an endpoint to enable the development of a frontend for managing and utilizing this information.
+
+### Infrastructure Cloud Deployment
+
+The main idea here is to leverage [Encore](https://encore.dev) technology to get our product up and running in the cloud. This approach simplifies the process of running, testing, implementing CI/CD, and deploying the application.
+
+<img width="200px" src="https://encore.dev/assets/branding/logo/logo.svg" alt="Encore - The Backend Development Engine" />
 
 ## Using Databases with Encore
 
@@ -33,12 +39,6 @@ encore run
 
 While `encore run` is running, open <http://localhost:9400/> to view Encore's local developer dashboard.
 Here you can see the request you just made and a view a trace of the response.
-
-## Deployment
-
-Deploy your application to a staging environment in Encore's free development cloud.
-
-Then head over to <https://app.encore.dev> to find out your production URL, and off you go into the clouds!
 
 ## Testing
 
