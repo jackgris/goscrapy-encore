@@ -21,6 +21,31 @@ The main idea here is to leverage [Encore](https://encore.dev) technology to get
 Encore treats SQL databases as logical resources and natively supports **PostreSQL** databases.
 To start using a database you only need to [define the schema](https://encore.dev/docs/primitives/databases#defining-a-database-schema) by creating a migration file. Encore takes care of [provisioning the database](https://encore.dev/docs/primitives/databases#provisioning-databases), running new schema migrations during deploys, and connecting to it.
 
+### Access database with Docker and Psql
+
+You only need to run this command:
+
+```bash
+docker exec -it <container-id> psql -h localhost -p 5432 -U postgres goscrapy
+```
+
+Example:
+```bash
+docker exec -it 76789876f577 psql -h localhost -p 5432 -U postgres goscrapy
+```
+
+Also you can use this, if you have installed `psql` in your system:
+
+```bash
+encore db shell <db-name>
+```
+
+In this case:
+
+```bash
+encore db shell goscrapy
+```
+
 ### Defining database schemas
 
 Database schemas are defined by creating *migration files* in a directory named `migrations`
